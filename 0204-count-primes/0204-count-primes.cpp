@@ -7,12 +7,12 @@ public:
         }
         vector<bool>isprime(n , true);
         int ans = 0;
-        for(int i=2; i < n; i++)
+        for(int i=2; i<n; i++)
         {
             if(isprime[i])
             {
                 ans++;
-                for(int j=2*i; j<n; j = j + i) //j=2*i se nahi kra coz vo wale pehel se ho chuke honge markedd
+                for(int j=2*i; j<n; j = j + i)
                 {
                     isprime[j] = false;
                 }
