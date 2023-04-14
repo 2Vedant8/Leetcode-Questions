@@ -9,10 +9,7 @@ public:
                 ans = ans + i;
             }
         }
-            if(ans==num)
-            {
-                return true;
-            }
-        return false;
+        
+        return ans==num;
     }
 };
