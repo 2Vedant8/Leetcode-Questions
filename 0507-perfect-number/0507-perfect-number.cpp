@@ -1,15 +1,28 @@
-class Solution {
-public:
-    bool checkPerfectNumber(int num) {
-        int ans = 0;
-        for(int i=1; i<num; i++)
+class Solution
+{
+    public:
+        bool checkPerfectNumber(int num)
         {
-            if(num%i==0)
+            if (num <= 1)
             {
-                ans = ans + i;
+                return false;
             }
+
+            int ans = 0;
+            for (int i = 1; i * i <= num; i++)
+            {
+            	
+                if (num % i == 0)
+                {
+                    ans += i;	
+                    if (i != num / i && i != 1)
+                    {
+                    	
+                        ans += num / i;
+                    }
+                }
+            }
+
+            return ans == num;
         }
-        
-        return ans==num;
-    }
 };
