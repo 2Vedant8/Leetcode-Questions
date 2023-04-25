@@ -1,7 +1,20 @@
 class Solution {
 public:
-    string replaceDigits(string s) {
-        for(int i=1;i<s.length();i+=2) s[i]=s[i-1]+s[i]-'0';
-        return s;
+    int arraySign(vector<int>& nums) {
+        int res=1;
+        for(auto i: nums)
+        {
+            if(i==0)
+            {
+                return 0;
+            }
+            if(i<0)
+            {
+                res = -res;
+            }
+        }
+        return res;
+        
+        
     }
 };
