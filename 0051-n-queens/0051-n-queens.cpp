@@ -1,7 +1,7 @@
 class Solution
 {
     public:
-        unordered_map<int, bool> rowcheck;
+    unordered_map<int, bool> rowcheck;
     unordered_map<int, bool> upperleftdiagonalcheck;
     unordered_map<int, bool> bottomleftdiagonalcheck;
 
