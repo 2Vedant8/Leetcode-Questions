@@ -2,7 +2,7 @@ class Solution
 {
     public:
 
-        void combinationsum_helper(vector<int> candidates, int target, vector<int> &v, vector< vector< int>> &ans, int index)
+        void combinationsum_helper(vector<int> &candidates, int target, vector<int> &v, vector< vector< int>> &ans, int index)
             {
                	//base case
                 if (target == 0)
